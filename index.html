@@ -2,115 +2,76 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Telegram Канал</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Написать в WhatsApp</title>
 
-  <!-- Facebook Pixel -->
+  <!-- TikTok Pixel Code Start -->
   <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod ?
-    n.callMethod.apply(n,arguments) : n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
+  !function (w, d, t) {
+    w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+  var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+  n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
 
-    fbq('init', '958146400260200');
-    fbq('track', 'PageView');
+    ttq.load('D7TFKHRC77UDOFSGDLK0');
+    ttq.page();
+  }(window, document, 'ttq');
   </script>
-
-  <noscript>
-    <img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=958146400260200&ev=PageView&noscript=1"/>
-  </noscript>
+  <!-- TikTok Pixel Code End -->
 
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #0f172a, #1e293b);
+      background: #0f172a;
       color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
       text-align: center;
     }
 
     .container {
       max-width: 400px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-
-    .logo {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 20px;
-      border: 3px solid #38bdf8;
+      padding: 20px;
     }
 
     h1 {
-      margin: 10px 0;
-      font-size: 26px;
+      font-size: 28px;
+      margin-bottom: 10px;
     }
 
     p {
-      color: #cbd5f5;
-      font-size: 16px;
-      margin-bottom: 25px;
-    }
-
-    .preview {
-      width: 100%;
-      border-radius: 15px;
-      margin-bottom: 25px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      opacity: 0.8;
+      margin-bottom: 30px;
     }
 
     .btn {
       display: inline-block;
       padding: 15px 25px;
       font-size: 18px;
+      background: #25D366;
       color: white;
-      background: #38bdf8;
-      border-radius: 10px;
       text-decoration: none;
+      border-radius: 12px;
       transition: 0.3s;
     }
 
     .btn:hover {
-      background: #0ea5e9;
       transform: scale(1.05);
-    }
-
-    .footer {
-      margin-top: 40px;
-      font-size: 12px;
-      color: #64748b;
+      opacity: 0.9;
     }
   </style>
 </head>
-
 <body>
 
   <div class="container">
+    <h1>Связаться с нами</h1>
+    <p>Нажмите кнопку ниже, чтобы написать в WhatsApp</p>
 
-    <img src="logo.png" alt="Логотип канала" class="logo">
-
-    <h1>ALTYNbet</h1>
-
-    <!-- КНОПКА С СОБЫТИЕМ -->
-    <a href="https://t.me/+YX4Ia3NLDOtjZTRi" 
-       class="btn" 
-       target="_blank"
-       onclick="fbq('trackCustom', 'Subscribe');">
-      Подписаться
+    <a href="https://wa.link/ii7rcu" class="btn" onclick="ttq.track('Purchase')">
+      Написать
     </a>
-
-    <div class="footer">
-      © 2026 Все права защищены
-    </div>
-
   </div>
 
 </body>
